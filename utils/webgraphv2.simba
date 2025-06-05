@@ -131,7 +131,9 @@ procedure TWebGraphV2.BlockInside(area: TBox);
 var
   i, c: Int32;
 begin
+  c := Length(blocking);
   SetLength(blocking, Length(Self.Nodes));
+
 
   for i := 0 to High(Self.Nodes) do
     if area.Contains(Self.Nodes[i]) then
@@ -147,6 +149,7 @@ procedure TWebGraphV2.BlockOutside(Area: TBox);
 var
   i, c: Int32;
 begin
+  c := Length(blocking);
   SetLength(Blocking, Length(Self.Nodes));
 
   for i := 0 to High(Self.Nodes) do

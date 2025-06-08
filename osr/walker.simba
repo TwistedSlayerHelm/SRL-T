@@ -705,6 +705,9 @@ begin
 
   if MainScreen.IsVisible(b.Middle) then
     Result := CountColor($0, b.Expand(4, MainScreen.Bounds)) = 0; //Client doesn't always render everything when zoomed out
+
+  if Result then
+    Exit(Minimap.IsPointOn(mmPoint, -1));
 end;
 
 

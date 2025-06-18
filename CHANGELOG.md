@@ -1,3 +1,12 @@
+## [7.20.10](https://github.com/Torwent/SRL-T/compare/v7.20.9...v7.20.10) (2025-06-18)
+
+
+### Bug Fixes
+
+* itemfinder update ([addb4db](https://github.com/Torwent/SRL-T/commit/addb4db3efd8d0c0f3ed86021db8c600461675e7))
+
+
+
 ## [7.20.9](https://github.com/Torwent/SRL-T/compare/v7.20.8...v7.20.9) (2025-06-08)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * Lobby handler fix ([12659f0](https://github.com/Torwent/SRL-T/commit/12659f0241be6fb601c4be72e83abe409b446910))
-
-
-
-## [7.20.5](https://github.com/Torwent/SRL-T/compare/v7.20.4...v7.20.5) (2025-05-08)
-
-
-### Bug Fixes
-
-* GrandExchange OCR ([8bc1874](https://github.com/Torwent/SRL-T/commit/8bc187440f12e96727d466afcd80faa68fd64542))
 
 
 

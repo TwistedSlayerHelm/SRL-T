@@ -703,7 +703,7 @@ Example:
 WriteLn Login.LoginPlayer();
 ```
 *)
-function TRSLogin.LoginPlayer(): Boolean;
+function TRSLogin.LoginPlayer(): Boolean; 
 var
   attempts, world: Int32;
   timeout: UInt64;
@@ -713,11 +713,26 @@ begin
   Self.DebugLn('Logging in player');
 
   timeout := GetTickCount() + 40000;
+
+  player := Self.GetPlayer();
+  if Self.IsOpen and (player.Worlds <> []) then
+  begin
+    if not (Self.GetCurrentWorld() in player.Worlds) or SRL.Dice(30) then
+    begin
+      world := Player.Worlds[Random(Length(Player.Worlds))];
+      if (not Self.SwitchToWorld(world)) then
+        Exit;
+    end;
+
+    if Self.HandleDialogs() then
+      Wait(500);
+  end;
+
   while not Self.IsReady() do
   begin
     if Self.FindText('CLICK HERE TO PLAY') then
       Exit(Self.EnterGame());
-      
+
     if Self.HandleDialogs() then
       Wait(500);
 
@@ -743,17 +758,6 @@ begin
   while Self.IsOpen() and (attempts < 10) do
   begin
     Self.DebugLn('Attempt ' + ToString(attempts + 1));
-
-    if player.Worlds <> [] then
-      if not (Self.GetCurrentWorld() in player.Worlds) or SRL.Dice(30) then
-      begin
-        world := Player.Worlds[Random(Length(Player.Worlds))];
-        if (not Self.SwitchToWorld(world)) then
-          Exit;
-      end;
-
-    if Self.HandleDialogs() then
-      Wait(500);
 
     if Self.DoLogin(player, isLauncher) and not Self.WaitLoginMessage() then
       Exit;

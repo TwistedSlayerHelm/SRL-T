@@ -1,3 +1,13 @@
+## [7.20.11](https://github.com/Torwent/SRL-T/compare/v7.20.10...v7.20.11) (2025-06-26)
+
+
+### Bug Fixes
+
+* force bump ([91336a0](https://github.com/Torwent/SRL-T/commit/91336a0325048a180206b4a07dc0f722ca2da45c))
+* now has 30% chance to hop on login ([ace035c](https://github.com/Torwent/SRL-T/commit/ace035ccd8975243b5b37b6ac7083f08a540fe01))
+
+
+
 ## [7.20.10](https://github.com/Torwent/SRL-T/compare/v7.20.9...v7.20.10) (2025-06-18)
 
 
@@ -32,15 +42,6 @@
 ### Bug Fixes
 
 * TRSMap default sample amount ([afd7aa0](https://github.com/Torwent/SRL-T/commit/afd7aa0115da2e2c0062bb3ce2efe69441abec76))
-
-
-
-## [7.20.6](https://github.com/Torwent/SRL-T/compare/v7.20.5...v7.20.6) (2025-05-08)
-
-
-### Bug Fixes
-
-* Lobby handler fix ([12659f0](https://github.com/Torwent/SRL-T/commit/12659f0241be6fb601c4be72e83abe409b446910))
 
 
 

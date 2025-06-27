@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   documentation:
+    if: github.repository_owner == 'Torwent'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

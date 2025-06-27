@@ -729,6 +729,7 @@ begin
     end;
   end;
 
+  player := Self.GetPlayer();
   isLauncher := Self.UsingLauncher();
 
   if isLauncher then
@@ -736,7 +737,6 @@ begin
   else
   begin
     Self.DebugLn('Legacy login detected.');
-    player := Self.GetPlayer();
     if (player.User = '') or (player.Password = '') then
       Self.Fatal('Player has no username or password');
   end;

@@ -1,3 +1,12 @@
+## [7.20.12](https://github.com/Torwent/SRL-T/compare/v7.20.11...v7.20.12) (2025-07-30)
+
+
+### Bug Fixes
+
+* update maps ([2992122](https://github.com/Torwent/SRL-T/commit/2992122cd84932fc7b7f81c404560ce681f80199))
+
+
+
 ## [7.20.11](https://github.com/Torwent/SRL-T/compare/v7.20.10...v7.20.11) (2025-06-27)
 
 
@@ -39,15 +48,6 @@
 ### Bug Fixes
 
 * Add GE tab changing failsafe ([b5240e4](https://github.com/Torwent/SRL-T/commit/b5240e45d1c0e48f1fe09264711f5aa836619143))
-
-
-
-## [7.20.7](https://github.com/Torwent/SRL-T/compare/v7.20.6...v7.20.7) (2025-05-09)
-
-
-### Bug Fixes
-
-* TRSMap default sample amount ([afd7aa0](https://github.com/Torwent/SRL-T/commit/afd7aa0115da2e2c0062bb3ce2efe69441abec76))
 
 
 

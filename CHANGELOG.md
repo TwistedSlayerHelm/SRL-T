@@ -1,3 +1,12 @@
+## [7.20.13](https://github.com/Torwent/SRL-T/compare/v7.20.12...v7.20.13) (2025-07-31)
+
+
+### Bug Fixes
+
+* Update login.simba with optional overload ([4e19291](https://github.com/Torwent/SRL-T/commit/4e192914a12c77b694e5372c0c18e07d003f73f2))
+
+
+
 ## [7.20.12](https://github.com/Torwent/SRL-T/compare/v7.20.11...v7.20.12) (2025-07-30)
 
 
@@ -39,15 +48,6 @@
 
 * blocking nodes ina webgraph no longer resets the current blocked nodes ([96fbfe8](https://github.com/Torwent/SRL-T/commit/96fbfe82dd03cceedb8a706b6ec48e768ff5c6f0))
 * walker no longer selects points to walk to outside the minimap ([5290481](https://github.com/Torwent/SRL-T/commit/52904818851be6ae492ae37e0449bc989fd2e0d7))
-
-
-
-## [7.20.8](https://github.com/Torwent/SRL-T/compare/v7.20.7...v7.20.8) (2025-05-16)
-
-
-### Bug Fixes
-
-* Add GE tab changing failsafe ([b5240e4](https://github.com/Torwent/SRL-T/commit/b5240e45d1c0e48f1fe09264711f5aa836619143))
 
 
 

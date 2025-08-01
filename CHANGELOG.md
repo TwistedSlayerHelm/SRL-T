@@ -1,3 +1,12 @@
+## [7.20.14](https://github.com/Torwent/SRL-T/compare/v7.20.13...v7.20.14) (2025-08-01)
+
+
+### Bug Fixes
+
+* Update login.simba ([1e4093c](https://github.com/Torwent/SRL-T/commit/1e4093cdfc26cc863d4e04c657ad96efb2400957))
+
+
+
 ## [7.20.13](https://github.com/Torwent/SRL-T/compare/v7.20.12...v7.20.13) (2025-07-31)
 
 
@@ -38,16 +47,6 @@
 ### Bug Fixes
 
 * itemfinder update ([addb4db](https://github.com/Torwent/SRL-T/commit/addb4db3efd8d0c0f3ed86021db8c600461675e7))
-
-
-
-## [7.20.9](https://github.com/Torwent/SRL-T/compare/v7.20.8...v7.20.9) (2025-06-08)
-
-
-### Bug Fixes
-
-* blocking nodes ina webgraph no longer resets the current blocked nodes ([96fbfe8](https://github.com/Torwent/SRL-T/commit/96fbfe82dd03cceedb8a706b6ec48e768ff5c6f0))
-* walker no longer selects points to walk to outside the minimap ([5290481](https://github.com/Torwent/SRL-T/commit/52904818851be6ae492ae37e0449bc989fd2e0d7))
 
 
 

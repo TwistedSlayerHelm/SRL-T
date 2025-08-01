@@ -1,3 +1,12 @@
+## [7.20.16](https://github.com/Torwent/SRL-T/compare/v7.20.15...v7.20.16) (2025-08-01)
+
+
+### Bug Fixes
+
+* typo ([e20b6de](https://github.com/Torwent/SRL-T/commit/e20b6de0f58863b419862cc0d08e443c73958c08))
+
+
+
 ## [7.20.15](https://github.com/Torwent/SRL-T/compare/v7.20.14...v7.20.15) (2025-08-01)
 
 
@@ -31,22 +40,6 @@
 ### Bug Fixes
 
 * update maps ([2992122](https://github.com/Torwent/SRL-T/commit/2992122cd84932fc7b7f81c404560ce681f80199))
-
-
-
-## [7.20.11](https://github.com/Torwent/SRL-T/compare/v7.20.10...v7.20.11) (2025-06-27)
-
-
-### Bug Fixes
-
-* bump version ([1e3de1a](https://github.com/Torwent/SRL-T/commit/1e3de1ad2e62aa70fe12c6d6df27fadc0dbab873))
-* force bump ([cf219fb](https://github.com/Torwent/SRL-T/commit/cf219fb0b33daa4d4c7ee82cf2fb43555409207b))
-* force bump ([91336a0](https://github.com/Torwent/SRL-T/commit/91336a0325048a180206b4a07dc0f722ca2da45c))
-* Launcher world selection ([c9459bd](https://github.com/Torwent/SRL-T/commit/c9459bdc69db7ac024a7c4375c63decadaf734cb))
-* make version action only run on my repo ([6e1c097](https://github.com/Torwent/SRL-T/commit/6e1c097ea3a388646096bcc810d1d8714cc9e331))
-* now has 30% chance to hop on login ([ace035c](https://github.com/Torwent/SRL-T/commit/ace035ccd8975243b5b37b6ac7083f08a540fe01))
-* rollback bootie's PR ([5934367](https://github.com/Torwent/SRL-T/commit/59343673b2494dc10ab06972b3d03b5ee66aab93))
-* version bumping ([64ecb9e](https://github.com/Torwent/SRL-T/commit/64ecb9e8a524e9f487f77345480009be891e688b))
 
 
 

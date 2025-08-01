@@ -766,6 +766,68 @@ begin
 end;
 
 (*
+## Login.LoginPlayer overload which allows for fully customizable hop and percentage.
+It's coded to behave as the default if you just prefer having the option to customize.
+```pascal
+function TRSLogin.LoginPlayer(randomHop; hopChance): Boolean; overload;
+```
+Attempts to login the current selected player into the game.
+The currently selected player is decided by TRSLogin.PlayerIndex which is an
+index of the TRSLogin.Players array.
+
+Example:
+```pascal
+WriteLn Login.LoginPlayer(True, 90%); // When on the main login lobby, has a 90% chance to hop
+```
+*)
+
+function TRSLogin.LoginPlayer(randomHop: Boolean; hopChance: Int32 = 30): Boolean; overload;
+var
+  attempts, world: Int32;
+  player: TRSLoginPlayer;
+  isLauncher: Boolean;
+begin
+  Self.DebugLn('Logging in player');
+
+  while not Self.IsReady() do
+    if Self.HandleDialogs() then
+      Wait(500);
+
+  isLauncher := Self.UsingLauncher();
+  if not isLauncher then
+  begin
+    player := Self.GetPlayer();
+    if (player.User = '') or (player.Password = '') then
+      Self.Fatal('Player has no username or password');
+  end;
+
+  while Self.IsOpen() and (attempts < 10) do
+  begin
+    Self.DebugLn('Attempt ' + ToString(attempts + 1));
+
+    if (player.Worlds <> []) and randomHop then
+    begin
+      if not (Self.GetCurrentWorld() in player.Worlds) or SRL.Dice(hopChance) then
+      begin
+        world := Player.Worlds[Random(Length(Player.Worlds))];
+        if (not Self.SwitchToWorld(world)) then
+          Exit;
+      end;
+    end;
+
+    if Self.HandleDialogs() then
+      Wait(500);
+
+    if Self.DoLogin(player, isLauncher) and not Self.WaitLoginMessage() then
+      Exit;
+
+    Inc(attempts);
+  end;
+
+  Result := Self.EnterGame();
+end;
+
+(*
 ## Login.AddPlayer
 ```pascal
 procedure TRSLogin.AddPlayer(user, pass: String; pin: String = ''; worlds: TIntegerArray = []);

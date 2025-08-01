@@ -1,3 +1,12 @@
+## [7.20.15](https://github.com/Torwent/SRL-T/compare/v7.20.14...v7.20.15) (2025-08-01)
+
+
+### Bug Fixes
+
+* Update login.simba ([3eae1f4](https://github.com/Torwent/SRL-T/commit/3eae1f456a83d55c26e61e6a9a7e79edc41884a1))
+
+
+
 ## [7.20.14](https://github.com/Torwent/SRL-T/compare/v7.20.13...v7.20.14) (2025-08-01)
 
 
@@ -38,15 +47,6 @@
 * now has 30% chance to hop on login ([ace035c](https://github.com/Torwent/SRL-T/commit/ace035ccd8975243b5b37b6ac7083f08a540fe01))
 * rollback bootie's PR ([5934367](https://github.com/Torwent/SRL-T/commit/59343673b2494dc10ab06972b3d03b5ee66aab93))
 * version bumping ([64ecb9e](https://github.com/Torwent/SRL-T/commit/64ecb9e8a524e9f487f77345480009be891e688b))
-
-
-
-## [7.20.10](https://github.com/Torwent/SRL-T/compare/v7.20.9...v7.20.10) (2025-06-18)
-
-
-### Bug Fixes
-
-* itemfinder update ([addb4db](https://github.com/Torwent/SRL-T/commit/addb4db3efd8d0c0f3ed86021db8c600461675e7))
 
 
 

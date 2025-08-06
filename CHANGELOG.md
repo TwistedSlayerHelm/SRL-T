@@ -1,3 +1,12 @@
+# [7.21.0](https://github.com/Torwent/SRL-T/compare/v7.20.16...v7.21.0) (2025-08-06)
+
+
+### Features
+
+* **itemfinder:** update ([0032ce3](https://github.com/Torwent/SRL-T/commit/0032ce329780611cb84a4d4e8d82cc7c34730361))
+
+
+
 ## [7.20.16](https://github.com/Torwent/SRL-T/compare/v7.20.15...v7.20.16) (2025-08-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * Update login.simba with optional overload ([4e19291](https://github.com/Torwent/SRL-T/commit/4e192914a12c77b694e5372c0c18e07d003f73f2))
-
-
-
-## [7.20.12](https://github.com/Torwent/SRL-T/compare/v7.20.11...v7.20.12) (2025-07-30)
-
-
-### Bug Fixes
-
-* update maps ([2992122](https://github.com/Torwent/SRL-T/commit/2992122cd84932fc7b7f81c404560ce681f80199))
 
 
 

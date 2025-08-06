@@ -225,8 +225,8 @@ end;
 
 procedure CreateHashesFile();
 const
-  ZIP_FILE = PATH + 'images.zip';
-  TMP_PATH = PATH + 'images';
+  ZIP_FILE = PATH + 'items-imgs.zip';
+  TMP_PATH = PATH + 'items-imgs';
   MODDED_PATH = PATH + 'modded' + DirectorySeparator;
 var
   current, hash, id: String;
@@ -246,8 +246,8 @@ begin
 
     ForceDirectories(MODDED_PATH);
 
-    if FileExists(PATH + 'hash') then
-      if not DeleteFile(PATH + 'hash') then
+    if FileExists(PATH + 'hash.txt') then
+      if not DeleteFile(PATH + 'hash.txt') then
       begin
         WriteLn 'Something went wrong deleting the old hashes file. No privilleges?';
         TerminateScript();
@@ -273,7 +273,7 @@ begin
       ClearItemBackground(bmp);
       hash := bmp.GetHash();
 
-      if not WriteFileContents(PATH + 'hash', hash + LineEnding, True) then
+      if not WriteFileContents(PATH + 'hash.txt', hash + LineEnding, True) then
       begin
         WriteLn 'Failed to write to hash';
         TerminateScript();
@@ -300,8 +300,8 @@ end;
 
 procedure TestHash(itemID: String);
 const
-  ZIP_FILE = PATH + 'images.zip';
-  TMP_PATH = PATH + 'images';
+  ZIP_FILE = PATH + 'items-imgs.zip';
+  TMP_PATH = PATH + 'items-imgs';
   MODDED_PATH = PATH + 'modded' + DirectorySeparator;
 var
   current, hash, id: String;

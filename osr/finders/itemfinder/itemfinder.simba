@@ -41,7 +41,7 @@ end;
 
 procedure TRSItemFinder.Setup();
 begin
-  Self.IMAGES_ZIP  := {$macro CURRENT_DIRECTORY} + 'images.zip';
+  Self.IMAGES_ZIP  := {$macro CURRENT_DIRECTORY} + 'items-imgs.zip';
   Self.IMAGES_PATH := CACHE_DIR + 'itemfinder' + DirectorySeparator +
                       SHA1File(Self.IMAGES_ZIP).SubString(6) +
                       DirectorySeparator;

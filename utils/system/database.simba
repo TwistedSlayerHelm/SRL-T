@@ -101,26 +101,26 @@ begin
   begin
     Self.Columns += columns[i];
 
-    if not FileExists(path + columns[i]) then
-      TerminateScript(columns[i] + ' file is missing.');
+    if not FileExists(path + columns[i] + '.txt') then
+      TerminateScript(columns[i] + '.txt file is missing.');
 
     Self.Data[i].Init();
-    Self.Data[i].LoadFromFile(path + columns[i]);
+    Self.Data[i].LoadFromFile(path + columns[i] + '.txt');
 
     Self.Maps[i].Init();
     Self.Maps[i].SetSorted(True);
     Self.Maps[i].setCaseSensitive(False);
 
-    if FileExists(cache + columns[i]) then
+    if FileExists(cache + columns[i] + '.txt') then
     begin
-      Self.Maps[i].LoadFromFile(cache + columns[i]);
+      Self.Maps[i].LoadFromFile(cache + columns[i] + '.txt');
       Continue;
     end;
 
     for j := 0 to Self.Data[i].High() do
       Self.Maps[i].Add(Self.Data[i].GetStrings(j) + '=' + ToStr(j));
 
-    Self.Maps[i].SaveToFile(cache + columns[i]);
+    Self.Maps[i].SaveToFile(cache + columns[i] + '.txt');
   end;
 
   AddOnTerminate(@Self.Free);

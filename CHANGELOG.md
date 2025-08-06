@@ -1,3 +1,12 @@
+## [7.21.1](https://github.com/Torwent/SRL-T/compare/v7.21.0...v7.21.1) (2025-08-06)
+
+
+### Bug Fixes
+
+* **itemfinder:** weird bug in some items ([73b01f8](https://github.com/Torwent/SRL-T/commit/73b01f8ced563260f14bd57f114da2621dd526be))
+
+
+
 # [7.21.0](https://github.com/Torwent/SRL-T/compare/v7.20.16...v7.21.0) (2025-08-06)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * Update login.simba ([1e4093c](https://github.com/Torwent/SRL-T/commit/1e4093cdfc26cc863d4e04c657ad96efb2400957))
-
-
-
-## [7.20.13](https://github.com/Torwent/SRL-T/compare/v7.20.12...v7.20.13) (2025-07-31)
-
-
-### Bug Fixes
-
-* Update login.simba with optional overload ([4e19291](https://github.com/Torwent/SRL-T/commit/4e192914a12c77b694e5372c0c18e07d003f73f2))
 
 
 

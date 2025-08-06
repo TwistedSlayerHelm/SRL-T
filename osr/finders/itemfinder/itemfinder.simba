@@ -389,14 +389,15 @@ begin
         clearTPA += tpa;
 
     // Clear image background on template
-    if alignedImage.FindColors(tpa, 0) then
+    if alignedImage.FindColors(tpa, RS_ITEM_BORDER) then
       clearTPA += tpa;
-    if alignedTemplate.FindColors(tpa, 0) then
+    if alignedImage.FindColors(tpa, $0) then
+      clearTPA += tpa;
+    if alignedTemplate.FindColors(tpa, $0) then
       clearTPA += tpa;
 
-    alignedTemplate.DrawTPA(clearTPA, 0);
-    alignedImage.DrawTPA(clearTPA, 0);
-
+    alignedTemplate.DrawTPA(clearTPA, $0);
+    alignedImage.DrawTPA(clearTPA, $0);
     Result := alignedImage.MatchTemplate(alignedTemplate, TM_CCORR_NORMED)[0][0]; // IDK why I used CCORR. But it works!
   
     alignedImage.Free();
